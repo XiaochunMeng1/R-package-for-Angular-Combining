@@ -5,7 +5,7 @@
 This R package implements several combining methods in the paper by Taylor and Meng (2025), entitled
 “Angular Combining of Forecasts of Probability Distributions”. In this R package, the output for each
 combining method is a random sample of values from the CDF forecast produced by the combining method. 
-In the “Master_Examples.R”, we present examples demonstrating how to apply the following combining methods:
+In the “Main_Examples.R”, we present examples demonstrating how to apply the following combining methods:
 
 1. Angular averaging - To generate CDF forecasts, the package uses the simulation algorithm, detailed
 in Online Appendix C of the paper. The angle can be subjectively chosen or optimized by minimizing the
@@ -30,7 +30,7 @@ The required libraries for the package are “stats” and “scoringRules”. T
 files:
 
 
-- Master_Examples.R
+- Main_Examples.R
 - CRPS.R
 - Estimate_angular_combining.R
 - Estimate_angular_weights.R
@@ -48,13 +48,13 @@ algorithm detailed in Online Appendix C of Taylor and Meng (2024), to estimate C
 generate a random sample of sizenfrom each of thek individual models at each time point, for both
 parameter estimation and prediction.
 
-## 2.1 Examples.R
+## 2.1 Main_Examples.R
 
 This file contains illustrative examples demonstrating how to implement the models listed in Section 1 of
 this document. In “Examples.R”, simulated data is used, with the two individual CDF forecasts being the
 same as those in the illustrative example in Section 2.1 of the paper by Taylor and Meng (2024). The two
 individual CDFs Gaussian have means of -0.15 and 0.15, and standard deviations of 0.1. The data generating
-process is a Gaussian distribution having mean of 0 and standard deviation of 0.15. In “Examples.R”, Section
+process is a Gaussian distribution having mean of 0 and standard deviation of 0.15. In “Main_Examples.R”, Section
 1 loads all the libraries and functions, Section 2 loads the simulated data, and Section 3 contains examples
 showing how to implement each combining method listed in Section 1 of this document.
 
