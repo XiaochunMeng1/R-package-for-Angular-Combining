@@ -44,7 +44,7 @@ files:
 The rest of this document provides a description for each of these files. For clarity, we assume we are working
 with in-sample historical data containingmtime points. At each time point, we have a single historical
 observation andk individual forecasts that we aim to aggregate. The package employs the simulation
-algorithm detailed in Online Appendix C of Taylor and Meng (2024), to estimate CDF forecasts. We
+algorithm detailed in Online Appendix C of Taylor and Meng (2025), to estimate CDF forecasts. We
 generate a random sample of sizenfrom each of thek individual models at each time point, for both
 parameter estimation and prediction.
 
